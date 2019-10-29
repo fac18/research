@@ -145,28 +145,6 @@ Example: PS1="\[\e[33m\]MAKE ME YELLOW"
 
 ## Managing packages
 
----
-
-* What are packages and package managers?
-
-![what?](https://media.giphy.com/media/pPhyAv5t9V8djyRFJH/giphy.gif)
-
----
-
-* What are packages and package managers?
-
-* npm (Node Package Manager) and nvm (Node Version Manager)
-
----
-
-* What are packages and package managers?
-
-* npm (Node Package Manager) and nvm (Node Version Manager)
-
-* Why do you need a package manager?
-
----
-
 * What are packages and package managers?
 
 * npm (Node Package Manager) and nvm (Node Version Manager)
@@ -177,6 +155,7 @@ Example: PS1="\[\e[33m\]MAKE ME YELLOW"
     * open your command line
     * type in: npm install <package>
 
+---
 
 ## Further notes
 
