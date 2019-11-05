@@ -176,6 +176,16 @@ nodeItem = nodeList.item(2);
 
 ---
 
+## NodeLists and HTMLCollections
+
+* HTMLCollections are live but NodeLists are static (i.e. changes to elements/the DOM are updated for the former, not for the latter)
+* querySelectorAll produces NodeLists whereas getElementsByClassName/getElementByTagName produce HTMLCollections
+* they have the same methods except for namedItem, which only HTMLCollections have
+* both are array-like objects which can be easily made into arrays (Array.from or spread operator methods)
+
+
+---
+
 ## How is NodeList different from an Array?
 
 * A NodeList has items stored at numeric indices and a length property just like an Array.
