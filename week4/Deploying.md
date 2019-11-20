@@ -95,10 +95,6 @@ They are simply a name mapped to a value that are external to our application wh
 
 ---
 
-![](https://i.imgur.com/gaBfbDt.png)
-
----
-
 ### Why might some variables in your code need to change for different environments? 
 
 <font color= yellow>
