@@ -1,0 +1,75 @@
+## Streams and Buffers
+
+![](https://media.giphy.com/media/XAe9aDBIv3arS/giphy.gif)  ![](https://media.giphy.com/media/oVtYtD1k0SSDivz4rS/giphy.gif =275x300)
+
+---
+
+## What is a stream?
+
+A stream is an object that lets you read data from a source or write data to the destination in a continuous fashion
+
+Stream is Used In:
+- HTTP request & responses
+- Standard input/output(stdin & stdout)
+- File reads and write
+
+---
+
+## Stream Benefits:
+- Abstraction for continuous chunking of data
+- No need to wait for the entire resource to load
+
+---
+
+## What is a Buffer? 
+- Temporary storage spot for chunks of data that are being transferred from one place to another
+- The buffer is filled with data and then passed along
+- Transfer small chunks of data at a time
+
+---
+
+## The buffer is the “waiting area”!
+
+![](https://media.giphy.com/media/2uwZ4xi75JhxZYeyQB/giphy.gif)
+
+---
+
+#### When a video is "buffering" it means it's gathering more data, or waiting for more data to arrive to fill up the buffer and be sent out
+
+![](https://media.giphy.com/media/3o7bu8sRnYpTOG1p8k/giphy.gif)
+
+---
+
+- The buffer is like a bus station where a bus is not allowed to depart until a certain amount of passengers arrive. 
+- Passengers may arrive at different times with different speed, but they need to wait until the bus is full to be sent on their way.
+
+![](https://media.giphy.com/media/u49KK3Xbxpa2EnrSCp/giphy.gif)
+
+---
+
+Readable Stream
+```javascript=
+const fs = require("fs");
+const path = process.argv[2];
+const readStream = fs.createReadStream(path, { highWaterMark: 34 });
+
+readStream.on("data", chunk => {
+  readStream.pause();
+  process.stdout.write(chunk);
+  setTimeout(() => {
+    readStream.resume();
+  }, 2500);
+});
+
+readStream.on("error", error => {
+  console.log(error);
+});
+```
+
+---
+
+EXTRA READING: 
+
+https://www.freecodecamp.org/news/do-you-want-a-better-understanding-of-buffer-in-node-js-check-this-out-2e29de2968e8/
+
+https://www.freecodecamp.org/news/node-js-streams-everything-you-need-to-know-c9141306be93/
