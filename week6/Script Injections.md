@@ -6,6 +6,7 @@
 Useful further reading links:
 
 [8 ways to prevent SQL injection attacks](https://tableplus.com/blog/2018/08/best-practices-to-prevent-sql-injection-attacks.html)
+
 [More in-depth information on defences](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.md) (example code given in different languages)
 
 ---
