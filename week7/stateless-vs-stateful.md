@@ -63,7 +63,7 @@ const token = jwt.sign(userInfo, secret, (err, res) => {
 
 ## Flow diagram - Stateless
 
-![Flow diagram - Stateless](https://miro.medium.com/max/1530/1*PDry-Wb8JRquwnikIbJOJQ.png =500x300)
+![Flow diagram - Stateless](https://miro.medium.com/max/1530/1*PDry-Wb8JRquwnikIbJOJQ.png)
 
 ---
 
@@ -105,7 +105,7 @@ Well done, you've initiated a new session!
 
 ## Flow diagram - Stateful
 
-![Flow diagram - Stateful](https://miro.medium.com/max/1530/1*Hg1gUTXN5E3Nrku0jWCRow.png =500x300)
+![Flow diagram - Stateful](https://miro.medium.com/max/1530/1*Hg1gUTXN5E3Nrku0jWCRow.png)
 
 ---
 
